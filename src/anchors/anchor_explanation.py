@@ -1,12 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-@Time ： 2021/4/6 10:58
-@Auth ： Yu Xiong
-@File ：anchor_explanation.py
-@IDE ：PyCharm
-@Motto：ABC(Always Be Coding)
-
-"""
 
 
 class AnchorExplanation:

@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-@Time ： 2021/3/19 14:13
-@Auth ： Yu Xiong
-@File ：anchor_tabular.py
-@IDE ：PyCharm
-@Motto：ABC(Always Be Coding)
 
-"""
 from anchors import anchor_explanation
 from anchors import anchor_base
 from collections import Counter

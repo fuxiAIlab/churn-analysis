@@ -1,12 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-@Time ： 2021/3/22 19:34
-@Auth ： Yu Xiong
-@File ：anchor_base.py
-@IDE ：PyCharm
-@Motto：ABC(Always Be Coding)
-
-"""
 
 import numpy as np
 import collections

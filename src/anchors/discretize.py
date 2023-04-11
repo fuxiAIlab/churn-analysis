@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-@Time ： 2021/3/19 15:50
-@Auth ： Yu Xiong
-@File ：discretize.py
-@IDE ：PyCharm
-@Motto：ABC(Always Be Coding)
 
-"""
 from abc import ABCMeta, abstractmethod
 import numpy as np
 

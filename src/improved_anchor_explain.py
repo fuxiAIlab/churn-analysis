@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-@Time ： 2021/7/8 14:22
-@Auth ： Yu Xiong
-@File ：explain_dataset2.py
-@IDE ：PyCharm
-@Motto：ABC(Always Be Coding)
 
-"""
 
 from anchors import anchor_tabular
 # from anchor import anchor_tabular

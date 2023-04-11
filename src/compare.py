@@ -199,105 +199,6 @@ def feature_selection(model_type):
         col_rank = col_list[p]
         print(col_rank[:5])
 
-    if model_type == 'cforest':
-        dic = {'2w_bh_task_ratio': 6.475675e-04,
-        '2w_bind_yuanbao_get_ratio': 3.311456e-04,
-        '2w_bl_task_ratio': 1.395837e-03,
-        '2w_bt_task_ratio': 0.000000e+00,
-        '2w_chujia_cnt': -8.057787e-10,
-        '2w_cjg_die_cnt': 1.598502e-05,
-        '2w_create_team_ratio': 3.131210e-04,
-        '2w_d_avg_f_bl_task_cnt': 9.522499e-04,
-        '2w_d_avg_f_ml_task_cnt': 1.352373e-03,
-        '2w_d_avg_merge_equip_cnt': 2.659905e-04,
-        '2w_d_avg_xilian_equip_cnt': 1.562314e-04,
-        '2w_divorce_cnt': 0.000000e+00,
-        '2w_equip_play_time_ratio': 6.381736e-04,
-        '2w_exp_play_time_ratio': 2.256818e-03,
-        '2w_get_exp_ratio': 1.397950e-03,
-        '2w_get_purple_equip_amt': 1.786711e-03,
-        '2w_get_skillexp_ratio': 1.637939e-03,
-        '2w_get_yl_ratio': 5.936452e-04,
-        '2w_get_yp_ratio': 6.943923e-04,
-        '2w_guild_chuangong_cnt': 8.666633e-04,
-        '2w_hjh_fail_ratio': 7.729079e-06,
-        '2w_jj_task_ratio': 1.822978e-04,
-        '2w_kickout_team_cnt': 4.384896e-03,
-        '2w_kickout_team_ratio': 3.881583e-04,
-        '2w_killed_ratio': 1.169986e-04,
-        '2w_leisure_task_die_cnt': 2.017631e-03,
-        '2w_leisure_yabiao_die_cnt': 3.907752e-05,
-        '2w_lw_time_ratio': 5.990696e-05,
-        '2w_mh_time_ratio': 7.087550e-04,
-        '2w_ml_task_ratio': 1.581162e-03,
-        '2w_not_bind_yuanbao_get_ratio': 8.711981e-03,
-        '2w_passionfight_die_cnt': 1.202641e-04,
-        '2w_pet_play_time_ratio': 5.532133e-06,
-        '2w_qmlf_yx_time_ratio': 1.299488e-03,
-        '2w_qmlfsxyqt_time_ratio': 2.081809e-03,
-        '2w_qy_ratio': 4.202498e-04,
-        '2w_shitu_play_cnt': 1.432651e-05,
-        '2w_shl_time_ratio': 2.751435e-03,
-        '2w_shop_money_get_amt': 1.996184e-04,
-        '2w_sjtx_die_cnt': 1.280946e-03,
-        '2w_sjtx_time_ratio': 8.352574e-04,
-        '2w_szqx_time_ratio': 1.605355e-03,
-        '2w_task_giveup_ratio': 1.048538e-03,
-        '2w_team_match_ratio': 1.796025e-04,
-        '2w_tushi_play_cnt': 2.279415e-05,
-        '2w_weiwang_play_time_ratio': 9.311807e-04,
-        '2w_wl_time_ratio': 8.671280e-04,
-        '2w_wxl_time_ratio': 2.181825e-04,
-        '2w_wyc_time_ratio': 5.137514e-04,
-        '2w_zjx_time_ratio': 1.223151e-03,
-        '2w_zl_time_ratio': 3.514253e-07,
-        '2w_zy_time_ratio': 1.767752e-04,
-        'acm_get_hero_card_amt': 1.102374e-02,
-        'acm_qy_num': 2.317205e-03,
-        'acm_sjbl_cnt': 4.145173e-03,
-        'acm_up_9_level_skill_amt': 2.351233e-02,
-        'addtitle_cnt': 1.438766e-02,
-        'baishifail_cnt': 1.389351e-05,
-        'churn_friends_ratio': 8.048648e-04,
-        'couple_latest_log_time': 2.665799e-05,
-        'del_shitu_acm_cnt': 1.763285e-03,
-        'deled_shitu_acm_cnt': 1.606866e-03,
-        'equip_score_upgrade': 9.207476e-04,
-        'f_bl_task_acm_num': 1.791325e-03,
-        'f_ml_task_acm_num': 4.229288e-03,
-        'friends_chat_num': 7.863741e-04,
-        'friends_num': 7.459957e-03,
-        'fund': 3.575097e-03,
-        'guild_level': 2.860874e-03,
-        'kickout_guild_acm_cnt': 3.818467e-04,
-        'latest_rare_word_num_sjwq': 2.639797e-06,
-        'level_upgrade': 7.882802e-04,
-        'low_maintain': 8.830684e-06,
-        'nie_lian_time': 1.646907e-04,
-        'practice_score_upgrade': 5.874507e-04,
-        'shifu_latest_log_time': 5.733820e-05,
-        'shop_bankrupt_num': 5.973757e-05,
-        'shop_num': 1.481417e-04,
-        'skill_avg_level_upgrade': 1.139780e-03,
-        'total_score_upgrade': 1.601566e-03,
-        'watch_movie_acm_pct_avg': 1.200939e-03,
-        'wuxue_score_upgrade': 9.913760e-04}
-
-        feature_importance = [6.475675e-04,3.311456e-04,1.395837e-03,0.000000e+00,-8.057787e-10,1.598502e-05,
-        3.131210e-04,9.522499e-04,1.352373e-03,2.659905e-04,1.562314e-04,0.000000e+00,6.381736e-04,2.256818e-03,
-        1.397950e-03,1.786711e-03,1.637939e-03,5.936452e-04,6.943923e-04,8.666633e-04,7.729079e-06,1.822978e-04,
-        4.384896e-03,3.881583e-04,1.169986e-04,2.017631e-03,3.907752e-05,5.990696e-05,7.087550e-04,1.581162e-03,
-        8.711981e-03,1.202641e-04,5.532133e-06,1.299488e-03,2.081809e-03,4.202498e-04,1.432651e-05,2.751435e-03,
-        1.996184e-04,1.280946e-03,8.352574e-04,1.605355e-03,1.048538e-03,1.796025e-04,2.279415e-05,9.311807e-04,
-        8.671280e-04,2.181825e-04,5.137514e-04,1.223151e-03,3.514253e-07,1.767752e-04,1.102374e-02,2.317205e-03,
-        4.145173e-03,2.351233e-02,1.438766e-02,1.389351e-05,8.048648e-04,2.665799e-05,1.763285e-03,1.606866e-03,
-        9.207476e-04,1.791325e-03,4.229288e-03,7.863741e-04,7.459957e-03,3.575097e-03,2.860874e-03,3.818467e-04,
-        2.639797e-06,7.882802e-04,8.830684e-06,1.646907e-04,5.874507e-04,5.733820e-05,5.973757e-05,1.481417e-04,
-        1.139780e-03,1.601566e-03,1.200939e-03,9.913760e-04]
-        col_list = np.array(all_data.columns)
-        p = np.argsort(-np.array(feature_importance))
-        col_rank = col_list[p]
-        print(col_rank[:5])
     if model_type == 'lgb':
         model = lgb.Booster(model_file='model/lgb.model')
         preds = model.predict(all_data)
@@ -311,7 +212,6 @@ def feature_selection(model_type):
         print(col_rank[:5])
         print(col_imp)
 
-
     if model_type == 'lgb_shap':
         model = lgb.Booster(model_file='model/lgb.model')
         bg_data = all_data.sample(n=200, random_state=42)
@@ -324,7 +224,6 @@ def feature_selection(model_type):
         p = np.argsort(-shap_values)
         col_rank = col_list[p]
         print(col_rank[:5])
-
 
     n = [10, 20, 30, 40, 50]
     for x in n:
